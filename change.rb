@@ -3,11 +3,12 @@ def make_change(amount)
 	
 		
 		if amount >= 5
-			coins = {"quarters" => 0, "dimes" => 0, "nickles" => 1, "pennies" => amount - 5}
+			coins["nickles"] = 1
+			coins["pennies"] = amount - 5
 		end
 		
 		if amount < 5
-			coins = {"quarters" => 0, "dimes" => 0, "nickles" => 0, "pennies" => amount}
+			coins["pennies"] = amount
 		end
 		
 		
