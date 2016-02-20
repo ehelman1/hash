@@ -4,15 +4,13 @@ def make_change(amount)
 		
 		if amount >= 10
 			coins["dimes"] = 1
-			coins["nickles"] = amount - 10
-			
-		
+			#coins["nickles"] = amount - 10
+			coins["pennies"] = amount - 10
 		
 		
 		elsif amount >= 5 
 			coins["nickles"] = 1
 			coins["pennies"] = amount - 5
-		
 		
 		else amount < 5
 			coins["pennies"] = amount
