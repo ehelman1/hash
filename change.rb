@@ -4,8 +4,8 @@ def make_change(amount)
 	nickles = 5
 	pennies = 1
 	
-	if amount >= dimes
-		coins["dimes"] = 1
+	while amount >= dimes
+		coins["dimes"] = coins["dimes"] + 1
 		amount = amount - dimes
 	end
 	
