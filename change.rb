@@ -15,7 +15,8 @@ def make_change(amount)
 	end
 	
 	if amount >= pennies
-		coins["pennies"] = amount
+		coins["pennies"] = amount 
+		amount = amount - pennies
 	end
 				
 	coins
