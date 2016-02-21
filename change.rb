@@ -7,7 +7,7 @@ def make_change(amount)
 	
 	while amount >= quarters
 		coins["quarters"] = coins["quarters"] + 1
-		amount = amount - dimes
+		amount = amount - quarters
 	end	
 	
 	while amount >= dimes
