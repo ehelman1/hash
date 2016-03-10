@@ -47,6 +47,10 @@ class TestChangeMade < Minitest::Test
 		assert_equal({"quarters" => 1, "dimes" => 0, "nickles" => 0, "pennies" => 0}, make_change(25))
 	end
 	
+	def test_that_change_is_26
+		assert_equal({"quarters" => 1, "dimes" => 0, "nickles" => 0, "pennies" => 1}, make_change(26))
+	end
+	
 	
 	
 	
